@@ -1,0 +1,77 @@
+#root{
+  background:#181818;
+  height:100vh;
+  margin: 0 auto;
+}
+
+html{
+  margin: 0 auto;
+  background:#181818;
+}
+
+
+.App-header { /* Style du container principale*/
+  padding-left: 10px;
+  margin: 50px auto;
+  width:1000px;
+  height:740px;
+  background-image: url('https://i.imgur.com/ybuJLgB.png');
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  overflow-x: hidden;
+  border-radius:10px;
+  border:1px solid black;
+}
+
+
+span.Titre { /* Style du label des détails Pokémons*/
+  font-weight: bold;
+  font-family:Montserrat Light!important;
+}
+a/* Style des liens de la liste des Pokémons */{
+  color:red!important;
+  text-transform: capitalize;
+  font-family:Montserrat Light!important;
+}
+
+p /* Style du texte (Détails) */{
+  font-family:Montserrat Light!important;
+  text-transform:capitalize;
+}
+
+
+.Container_Pokemons_Left{ /* Partie gauche du container de l'app */
+  overflow-x: hidden;
+  overflow-y:scroll;
+  height:56vh;
+  width:40vh;
+  color:black;
+}
+
+
+/* STYLE DE LA SCROLLBAR POUR L'OVERFLOW DE LA LISTE DES POKEMONS */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  overflow-x: hidden;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
